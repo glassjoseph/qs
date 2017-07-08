@@ -9,7 +9,7 @@ body {
   margin: auto;
 }
 
-.foods-table {
+#foods-table {
   background-color: #CD5C5C;
   text-align: center;
   width: 90%;
@@ -38,6 +38,9 @@ input {
   width: 40%;
 }
 
-.submit-add-foods {
-
+#submit-add-foods {
+  background-color: #CD5C5C;
+  width: 20%;
+  height: 30px;
+  border-radius: 15px;
 }
