@@ -3,8 +3,11 @@
 ## Resources
 
 http://backend.turing.io/module4/lessons/webpack-demystified
+
 https://webpack.github.io/docs/
+
 https://code.tutsplus.com/series/introduction-to-webpack--cms-983
+
 https://survivejs.com/webpack/developing/getting-started/
 
 
