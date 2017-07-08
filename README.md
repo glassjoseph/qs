@@ -6,11 +6,13 @@ webpack lesson:
 http://backend.turing.io/module4/lessons/webpack-demystified
 webpack docs:
 https://webpack.github.io/docs/
-webpack tutorials: https://code.tutsplus.com/series/introduction-to-webpack--cms-983 
-other tutorials: https://survivejs.com/webpack/developing/getting-started/
+webpack tutorials:
+https://code.tutsplus.com/series/introduction-to-webpack--cms-983
+other tutorials:
+https://survivejs.com/webpack/developing/getting-started/
 
 
-## Initial Setup
+## Setup
 
 1. git clone git@github.com:valerietrudell/1701_quantified_self_frondend.git
 2. cd quantified_self_frontend
