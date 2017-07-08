@@ -32,7 +32,10 @@ https://survivejs.com/webpack/developing/getting-started/
 
 ### Run the Server: npm start
 ### Run the Tests: npm test
+
 ### Visit the app in the browser:
 
-* `http://localhost:8080/webpack-dev-server/` to run your application.
-* `http://localhost:8080/webpack-dev-server/test.html` to run your test suite in the browser.
+ http://localhost:8080/webpack-dev-server/
+
+### Run the Test in the Browser:
+ http://localhost:8080/webpack-dev-server/test.html
