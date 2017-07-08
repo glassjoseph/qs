@@ -30,12 +30,14 @@ https://survivejs.com/webpack/developing/getting-started/
 3. Under the Github Pages section of Options, select 'master' as your source
 4. npm run build  and commit before each push to master.
 
-### Run the Server: npm start
-### Run the Tests: npm test
+### Run the Server:
+  npm start
+  
+### Run the Tests:
+  npm test
 
 ### Visit the app in the browser:
-
- http://localhost:8080/webpack-dev-server/
+  http://localhost:8080/webpack-dev-server/
 
 ### Run the Test in the Browser:
- http://localhost:8080/webpack-dev-server/test.html
+  http://localhost:8080/webpack-dev-server/test.html
