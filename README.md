@@ -15,13 +15,9 @@ https://survivejs.com/webpack/developing/getting-started/
 
 1. git clone git@github.com:valerietrudell/1701_quantified_self_frondend.git
 2. cd quantified_self_frontend
-3. git remote rm origin
-4. Create a new repository on GitHub named `quantified-self`
-5. git remote add origin git@github.com:neight-allen/quantified-self.git
-6. npm i
-7. Add, commit, and push up to your repository
-8. Now add your team member(s) as collaborators to the repository. They can now clone down your `quantified-self` repository as normal.
-9. Once each partner clones down the repo, they need to run `npm install` to install the dependencies on their machine.
+3. npm i
+
+
 
 ## Github Pages setup
 
@@ -32,7 +28,7 @@ https://survivejs.com/webpack/developing/getting-started/
 
 ### Run the Server:
   npm start
-  
+
 ### Run the Tests:
   npm test
 
