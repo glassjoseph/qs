@@ -2,10 +2,10 @@
 
 ## Resources
 
-webpack lesson: http://backend.turing.io/module4/lessons/webpack-demystified
-webpack docs: https://webpack.github.io/docs/
-webpack tutorials: https://code.tutsplus.com/series/introduction-to-webpack--cms-983
-other tutorials: https://survivejs.com/webpack/developing/getting-started/
+http://backend.turing.io/module4/lessons/webpack-demystified
+https://webpack.github.io/docs/
+https://code.tutsplus.com/series/introduction-to-webpack--cms-983
+https://survivejs.com/webpack/developing/getting-started/
 
 
 ## Setup
