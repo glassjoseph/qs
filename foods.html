@@ -2,10 +2,58 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link rel="import" href="lib/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="lib/assets/stylesheets/application.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="lib/foods.js"></script>
+
   <title>Quantified Self - Manage Foods</title>
 </head>
 <body>
+  <div class="container">
+    <h1>Manage Foods</h1>
 
+    <form class="add-to-foods-table" action="lib/foods.js" method="post">
+      <label for="add-to-foods-table">Name</label>
+      <br>
+      <input type="text" name="name">
+      <br>
+      <label for="add-to-foods-table">Calories</label>
+      <br>
+      <input type="text" name="calories">
+      <br>
+      <br>
+      <input type="submit" name="submit-add-foods" value="Add Food">
+    </form>
+
+    <br>
+
+    <label>Filter By Name</label><br>
+    <input type='text' id='search-input'>
+
+    <br>
+    <br>
+
+    <table class="foods-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Calories</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="name-coloumn"></td>
+          <td id="calories-coloumn"></td>
+          <td><button class="delete-button" type="button" name="Delete"></button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   <script src="main.bundle.js"></script>
 </body>
 </html>

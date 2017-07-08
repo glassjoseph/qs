@@ -1,16 +1,18 @@
 # Quantified Self Webpack
 
-## Resources 
+## Resources
 
-webpack lesson: http://backend.turing.io/module4/lessons/webpack-demystified 
-webpack docs: https://webpack.github.io/docs/ 
+webpack lesson:
+http://backend.turing.io/module4/lessons/webpack-demystified
+webpack docs:
+https://webpack.github.io/docs/
 webpack tutorials: https://code.tutsplus.com/series/introduction-to-webpack--cms-983 
 other tutorials: https://survivejs.com/webpack/developing/getting-started/
 
 
 ## Initial Setup
 
-1. git clone git@github.com:valerietrudell/1701_quantified_self_frondend.git 
+1. git clone git@github.com:valerietrudell/1701_quantified_self_frondend.git
 2. cd quantified_self_frontend
 3. git remote rm origin
 4. Create a new repository on GitHub named `quantified-self`
@@ -25,10 +27,10 @@ other tutorials: https://survivejs.com/webpack/developing/getting-started/
 1. Visit your repository on Github
 2. Go to Settings
 3. Under the Github Pages section of Options, select 'master' as your source
-4. npm run build  and commit before each push to master. 
+4. npm run build  and commit before each push to master.
 
 ### Run the Server: npm start
-### Run the Tests: npm test 
+### Run the Tests: npm test
 ### Visit the app in the browser:
 
 * `http://localhost:8080/webpack-dev-server/` to run your application.
