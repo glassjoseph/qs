@@ -76,7 +76,6 @@
 	}
 
 	function filterTable(table_id) {
-	  // might want to add args for filtering different tables?
 	  var input = document.getElementById("search-input");
 	  var filter = input.value.toLowerCase();
 	  var table = document.getElementById(table_id);
