@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+}
+
+.container {
+  background-color: grey;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+
+#foods-table {
+  background-color: #CD5C5C;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+
+
+.delete-button {
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  border: 0.1rem solid grey;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 80%;
+  font-weight: bold;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+}
+
+#submit-add-foods {
+  background-color: #CD5C5C;
+  width: 20%;
+  height: 30px;
+  border-radius: 15px;
+}
