@@ -49,7 +49,7 @@
 	$(document).ready(() => {
 
 	  getFoods();
-	  filterTable();
+	  // filterTable('meals-foods-table')
 	});
 
 	function getFoods() {
@@ -60,19 +60,19 @@
 	}
 
 	function displayFoods(foods) {
-	  $('#foods-table');
+	  $('#meals-foods-table');
 	  for (let i = 0; i < foods.length; i++) {
 	    const id = foods[i].id;
 	    const name = foods[i].name;
 	    const calories = foods[i].calories;
-	    appendRow(id, name, calories);
+	    appendRow(id, name, calories, true);
 	  }
 	}
 
-	function appendRow(id, name, calories) {
-	  const button = '<input type="checkbox"/>';
+	function appendRow(id, name, calories, checkbox = false) {
+	  let button = checkbox ? '<input type="checkbox"/>' : "";
 	  const row = `<tr><td id="food-id-${id}">${name}</td><td id="calories-coloumn">${calories}</td><td>${button}<td></tr>`;
-	  $('#foods-table').prepend(row);
+	  $('#meals-foods-table').prepend(row);
 	}
 
 	function filterTable(table_id) {

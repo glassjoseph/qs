@@ -16,6 +16,13 @@ body {
   margin: auto;
 }
 
+#meals-foods-table {
+  background-color: #CD5C5C;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
 
 
 .delete-button {

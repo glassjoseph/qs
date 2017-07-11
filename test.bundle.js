@@ -457,9 +457,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	const assert = __webpack_require__(11).assert;
-	// var webdriver = require('selenium-webdriver');
-	// var test      = require('selenium-webdriver/testing');
-	// You can't bundle up unit tests w integration tests selen
+	// You can't bundle up unit tests w integration tests, as selenium-webdriver will fail
 
 	describe('our integration test bundle', function () {
 	  it('should exist', function () {
