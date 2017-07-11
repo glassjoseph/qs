@@ -49,7 +49,7 @@
 	$(document).ready(() => {
 
 	  getFoods();
-	  // filterTable('meals-foods-table')
+	  filterTable('meals-foods-table');
 	});
 
 	function getFoods() {
