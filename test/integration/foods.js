@@ -1,11 +1,11 @@
 var $ = require('jquery');
-var pry = require('pryjs')
+// var pry = require('pryjs')
 var assert    = require('chai').assert;
 var expect    = require('chai').expect;
 var webdriver = require('selenium-webdriver');
 var until     = webdriver.until;
 var test      = require('selenium-webdriver/testing');
-var host      = "http://localhost:8080"
+var host      = "http://localhost:8080/webpack-dev-server"
 var By        = webdriver.By
 
 test.describe('Foods.html', function() {
