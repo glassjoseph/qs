@@ -2,10 +2,160 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Quantified Self - Diary</title>
+  <link rel="import" href="lib/assets/stylesheets/application.css">
+  <link rel="stylesheet" href="lib/assets/stylesheets/application.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="lib/index.js"></script>
+
+  <title>Quantified Self - Meals</title>
 </head>
 <body>
+  <div class="container">
+    <!-- here begins diary section of index -->
+    <div class='diary-section'>
+      <div class="left-diary-half">
+        <span>Breakfast</span>
+            <table id="Breakfast" class="meal">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
 
+        <span>Lunch</span>
+            <table id="Lunch" class="meal">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
+      </div>
+
+      <div class="right-diary-half">
+        <span>Dinner</span>
+            <table id="Dinner" class="meal">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
+
+            <table id="Snacks" class="meal">
+              <thead>
+                <span>Snacks</span>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
+      </div>
+    </div>
+    <!-- diary section of index ends-->
+    <div class="middle-section">
+      <div class='adding-to-foods'>
+        <h1>Manage Foods</h1>
+
+        <form class="add-to-foods-table" action="lib/foods.js" method="post">
+          <label for="add-to-foods-table">Name</label>
+          <br>
+          <input type="text" name="name">
+          <br>
+          <label for="add-to-foods-table">Calories</label>
+          <br>
+          <input type="text" name="calories">
+          <br>
+          <br>
+          <input type="submit" id="submit-add-foods" value="Add Food">
+        </form>
+
+        <br>
+
+        <label>Search By Name</label><br>
+        <input type='text' id='search-input' onkeyup="filterTable('meals-foods-table')">
+
+        <br>
+        <br>
+      </div>
+      <div class="total">
+        <table id="totals" class="meal">
+          <thead>
+            <span>Totals</span>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tr class='total-section'>
+            <td>Total Calories</td>
+            <td>2000</td>
+          </tr>
+          <tr class='total-section'>
+            <td>Calories Consumed</td>
+            <td>0</td>
+          </tr>
+          <tr class='total-section'>
+            <td>Remaining Calories</td>
+            <td>2000</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+      <!-- middle section of index ends-->
+    <table id="meals-foods-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Calories</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
   <script src="main.bundle.js"></script>
 </body>
 </html>
