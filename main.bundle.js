@@ -45,10 +45,11 @@
 /***/ (function(module, exports) {
 
 	const host = "http://localhost:3000/api/v1";
-
+	//
 	$(document).ready(() => {
 
 	  getFoods();
+	  getMeal("Breakfast");
 	  filterTable('meals-foods-table');
 	});
 
@@ -56,18 +57,51 @@
 	  return $.ajax({
 	    url: `${host}/foods`,
 	    method: 'GET'
+	  }).done(displayMeal).fail(error => console.log(error));
+	}
+
+	function getMeal(name) {
+	  return $.ajax({
+	    url: `${host}/meals/${name}`,
+	    method: 'GET'
 	  }).done(displayFoods).fail(error => console.log(error));
 	}
 
 	function displayFoods(foods) {
 	  $('#meals-foods-table');
 	  for (let i = 0; i < foods.length; i++) {
+	    // debugger
 	    const id = foods[i].id;
 	    const name = foods[i].name;
 	    const calories = foods[i].calories;
 	    appendRow(id, name, calories, true);
 	  }
 	}
+
+	function displayMeal(foods) {
+	  $('#meals-foods-table');
+	  for (let i = 0; i < foods.length; i++) {
+	    // debugger
+	    const id = foods[i].id;
+	    const name = foods[i].name;
+	    const calories = foods[i].calories;
+	    appendRow(id, name, calories, true);
+	  }
+	}
+	//
+	//
+	// function displayFoods(foods) {
+	//   for(let i = 0; i < foods.length; i++) {
+	//     let id        = foods[i].id
+	//     let name      = foods[i].name
+	//     let calories  = foods[i].calories
+	//     let status    = foods[i].food_status
+	//     if (status == "active"){
+	//       prependRow(id, name, calories)
+	//     }
+	//   }
+	// }
+
 
 	function appendRow(id, name, calories, checkbox = false) {
 	  let button = checkbox ? '<input type="checkbox"/>' : "";
