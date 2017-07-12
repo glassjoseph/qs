@@ -105,7 +105,7 @@
 
 	function appendRow(id, name, calories, checkbox = false) {
 	  let button = checkbox ? '<input type="checkbox"/>' : "";
-	  const row = `<tr><td id="food-id-${id}">${name}</td><td id="calories-coloumn">${calories}</td><td>${button}<td></tr>`;
+	  const row = `<tr><td id="food-id-${id}">${name}</td><td id="calories-column">${calories}</td><td>${button}<td></tr>`;
 	  $('#meals-foods-table').prepend(row);
 	}
 
