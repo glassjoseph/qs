@@ -14,16 +14,200 @@
 </head>
 <body>
   <div class="container">
-    <h1>Manage Foods</h1>
+    <!-- here begins diary section of index -->
+    <div class='diary-section'>
+      <div class="left-diary-half">
+        <span>Breakfast</span>
+            <table id="Breakfast" class="meal">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- take this out -->
+              <tbody>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Banana</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">90</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Edemmame</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">110</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+              </tbody>
+              <!-- end of section -->
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
 
+        <span>Lunch</span>
+            <table id="Lunch" class="meal">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- take this out -->
+              <tbody>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Banana</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">90</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+                <!-- take this out -->
+                <tbody>
+                  <tr class="table-row">
+                  <td id="name-column" class="editable" contentEditable="true">Edemmame</td>
+                  <td class="editable" contentEditable="true" id="calories-coloumn">110</td>
+                  <td><button class="delete-button" type="button" name="Delete"></button><td>
+                  </tr>
+                </tbody>
+                <!-- end of section -->
+              </tbody>
+              <!-- end of section -->
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
+      </div>
+
+      <div class="right-diary-half">
+        <span>Dinner</span>
+
+            <table id="Dinner" class="meal">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- take this out -->
+              <tbody>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Banana</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">90</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Edemmame</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">110</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+              </tbody>
+              <!-- end of section -->
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
 
     <label>Search By Name</label><br>
     <input type='text' id='search-input' onkeyup="filterTable('meals-foods-table', 0)">
 
-    <br>
-    <br>
+            <table id="Snacks" class="meal">
+              <thead>
+                <span>Snacks</span>
+                <tr>
+                  <th>Name</th>
+                  <th>Calories</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <!-- take this out -->
+              <tbody>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Banana</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">90</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+                <tr class="table-row">
+                <td id="name-column" class="editable" contentEditable="true">Edemmame</td>
+                <td class="editable" contentEditable="true" id="calories-coloumn">110</td>
+                <td><button class="delete-button" type="button" name="Delete"></button><td>
+                </tr>
+              </tbody>
+              <!-- end of section -->
+              <tr class='total-section'>
+                <td>Total Calories</td>
+              </tr>
+              <tr class='total-section'>
+                <td>Remaining Calories</td>
+              </tr>
+            </table>
+        <br>
+      </div>
+    </div>
+    <!-- diary section of index ends-->
+    <div class="middle-section">
+      <div class='adding-to-foods'>
+        <h1>Manage Foods</h1>
 
-  </div>
+        <form class="add-to-foods-table" action="lib/foods.js" method="post">
+          <label for="add-to-foods-table">Name</label>
+          <br>
+          <input type="text" name="name">
+          <br>
+          <label for="add-to-foods-table">Calories</label>
+          <br>
+          <input type="text" name="calories">
+          <br>
+          <br>
+          <input type="submit" id="submit-add-foods" value="Add Food">
+        </form>
+
+        <br>
+
+        <label>Search By Name</label><br>
+        <input type='text' id='search-input' onkeyup="filterTable('meals-foods-table')">
+
+        <br>
+        <br>
+      </div>
+      <div class="total">
+        <table id="totals" class="meal">
+          <thead>
+            <span>Totals</span>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tr class='total-section'>
+            <td>Total Calories</td>
+            <td>2000</td>
+          </tr>
+          <tr class='total-section'>
+            <td>Calories Consumed</td>
+            <td>0</td>
+          </tr>
+          <tr class='total-section'>
+            <td>Remaining Calories</td>
+            <td id='total-calories'>2000</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+      <!-- middle section of index ends-->
     <table id="meals-foods-table">
       <thead>
         <tr>
@@ -35,56 +219,7 @@
       <tbody>
       </tbody>
     </table>
-
-
-<h3>Breakfast</h3>
-    <table id="Breakfast" class="meal">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Calories</th>
-          <th></th>
-        </tr>
-      </thead>
-    </table>
-<br>
-
-<h3>Lunch</h3>
-    <table id="Lunch" class="meal">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Calories</th>
-          <th></th>
-        </tr>
-      </thead>
-    </table>
-<br>
-
-<h3>Dinner</h3>
-    <table id="Dinner" class="meal">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Calories</th>
-          <th></th>
-        </tr>
-      </thead>
-    </table>
-<br>
-
-<h3>Snacks</h3>
-    <table id="Snacks" class="meal">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Calories</th>
-          <th></th>
-        </tr>
-      </thead>
-    </table>
-<br>
-
+  </div>
   <!-- <script src="main.bundle.js"></script> -->
 </body>
 </html>

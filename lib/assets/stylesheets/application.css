@@ -65,3 +65,53 @@ table {
 }
 
 tr:hover {background-color: #f69999}
+
+
+.total-section {
+  font-weight: bold;
+}
+
+.meal {
+  background-color: #CD5C5C;
+}
+
+.diary-section {
+  width: 100%;
+}
+
+.left-diary-half {
+  padding: 20px;
+  width: 45%;
+  float: left;
+}
+
+.right-diary-half {
+  padding: 20px;
+  width: 45%;
+  float: right;
+}
+
+span {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.middle-section {
+  width: 100%;
+}
+
+.adding-to-foods {
+  padding: 10px;
+  width: 45%;
+  float: left;
+}
+
+.total {
+  padding: 20px;
+  width: 45%;
+  float: right;
+}
+.table-row {
+  background-color: black;
+  color: white;
+}
