@@ -111,3 +111,7 @@ span {
   width: 45%;
   float: right;
 }
+.table-row {
+  background-color: black;
+  color: white;
+}
