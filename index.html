@@ -40,7 +40,7 @@
         </span>
         <table
           id      = "Breakfast"
-          data-id = "2" 
+          data-id = "2"
           class   = "meal">
           <thead>
             <tr>
@@ -82,7 +82,7 @@
         </span>
           <table
             id     = "Lunch"
-            data-id = "2" 
+            data-id = "2"
             class  = "meal">
             <thead>
               <tr>
@@ -166,7 +166,7 @@
         <br>
         <table
           id        = "Snacks"
-          data-id="4" 
+          data-id="4"
           class     = "meal">
           <thead>
             <span>
@@ -215,6 +215,9 @@
         <h1>
           Manage Foods
         </h1>
+        <form action="foods.html" class="create-new-button">
+            <button type="submit">Create New</button>
+        </form>
         <form
           class    = "add-to-foods-table"
           action   = "lib/foods.js"
@@ -270,21 +273,16 @@
               <th></th>
             </tr>
           </thead>
-          <tr
-            class   = 'total-section'>
-            <td>
-              Total Calories
-            </td>
-            <td>
-              2000
-            </td>
+          <tr class   = 'total-section'>
+            <td>Total Calories</td>
+            <td class="grandTotal" >2000</td>
           </tr>
           <tr
             class   = 'total-section'>
             <td>
               Calories Consumed
             </td>
-            <td>0</td>
+            <td class='calories-consumed'>0</td>
           </tr>
           <tr
             class   = 'total-section'>
@@ -292,6 +290,7 @@
               Remaining Calories
             </td>
             <td
+              class = 'total-remaining-calories  remaining-calories-column'
               id    = 'total-calories'>
               2000
             </td>

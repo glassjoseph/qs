@@ -47,7 +47,7 @@ input {
 
 #submit-add-foods {
   background-color: #CD5C5C;
-  width: 20%;
+  width: 30%;
   height: 30px;
   border-radius: 15px;
 }
@@ -118,4 +118,11 @@ span {
 
 .remaining-calories-column {
 
+}
+
+button {
+  background-color: #CD5C5C;
+  width: 30%;
+  height: 30px;
+  border-radius: 15px;
 }
