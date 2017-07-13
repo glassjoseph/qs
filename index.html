@@ -208,57 +208,7 @@
         <br>
       </div>
     </div>
-    <div
-      class        = "middle-section">
-      <div
-        class      = 'adding-to-foods'>
-        <h1>
-          Manage Foods
-        </h1>
-        <form action="foods.html" class="create-new-button">
-            <button type="submit">Create New</button>
-        </form>
-        <form
-          class    = "add-to-foods-table"
-          action   = "lib/foods.js"
-          method   = "post">
-          <label
-            for    = "add-to-foods-table">
-            Name
-          </label>
-          <br>
-          <input
-            type   = "text"
-            name   = "name">
-          <br>
-          <label
-            for    = "add-to-foods-table">
-            Calories
-          </label>
-          <br>
-          <input
-            type   = "text"
-            name   = "calories">
-          <br>
-          <br>
-          <br>
-          <input
-            type   = "submit"
-            id     = "submit-add-foods"
-            value  = "Add Food">
-        </form>
-        <br>
-        <label>
-          Search By Name
-        </label>
-        <br>
-        <input
-          type     = 'text'
-          id       = 'search-input'
-          onkeyup  = "filterTable('meals-foods-table', 0)">
-        <br>
-        <br>
-      </div>
+
       <div
         class      = "total">
         <table
@@ -298,6 +248,37 @@
         </table>
       </div>
     </div>
+    <div
+      class        = "middle-section">
+      <div
+        class      = 'adding-to-foods'>
+        <h1>
+          Manage Foods
+        </h1>
+        <form action="foods.html" class="create-new-button">
+            <button type="submit">Create New</button>
+        </form>
+        <div class="add-meal-buttons">
+          <h3>Add to Meals</h3>
+          <form class="" action="index.html" method="post">
+          <input data-id="1" type="button" name="" value="Breakfast">
+          <input data-id="2" type="button" name="" value="Lunch">
+          <input data-id="3" type="button" name="" value="Dinner">
+          <input data-id="4" type="button" name="" value="Snacks">
+        </form>
+        </div>
+        <br>
+        <label>
+          Search By Name
+        </label>
+        <br>
+        <input
+          type     = 'text'
+          id       = 'search-input'
+          onkeyup  = "filterTable('meals-foods-table', 0)">
+        <br>
+        <br>
+      </div>
     <table
       id            = "meals-foods-table">
       <thead>
@@ -314,16 +295,6 @@
       <tbody>
       </tbody>
     </table>
-
-    <div class="add-meal-buttons">
-      <h3>Add to Meals</h3>
-      <form class="" action="index.html" method="post">
-      <input data-id="1" type="button" name="" value="Breakfast">
-      <input data-id="2" type="button" name="" value="Lunch">
-      <input data-id="3" type="button" name="" value="Dinner">
-      <input data-id="4" type="button" name="" value="Snacks">
-    </form>
-    </div>
   </div>
   <!-- <script src="main.bundle.js"></script> -->
 </body>
