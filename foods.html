@@ -19,15 +19,13 @@
     <form id="add-to-foods">
       <label>Name</label>
       <br>
-      <input type="text" id="name-input">
+      <input type="text" id="name-input" required oninvalid="this.setCustomValidity('Please enter a food name')" oninput="setCustomValidity('')" >
       <br>
-      <span id="name-error"></span>
       <br>
       <label>Calories</label>
       <br>
-      <input type="text" id="calories-input">
+      <input type="text" id="calories-input" required oninvalid="this.setCustomValidity('Please enter a calorie amount')" oninput="setCustomValidity('')">
       <br>
-      <span id="calorie-error"></span>
       <br>
       <br>
       <input type="submit" id="submit-add-foods" value="Add Food">
@@ -37,7 +35,6 @@
 
     <label>Filter By Name</label><br>
     <input type='text' id='search-input' onkeyup="filterTable('foods-table', 0)">
-
     <br>
     <br>
 
